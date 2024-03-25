@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet">
+  <title>Intro component with sign up form</title>
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<div class="page-container">
+  <div class="header">
+  <h1>Intro component with sign up form practice page</h1>
+
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p> 
+</div>
+<div class="forms-container">
+  <button class="btn-action"><span><strong>Try it free 7 days</strong> then $20/mo.</span>
+  </button>
+<form id="form" novalidate>
+  <input id="firstName" name="name" type="text"  placeholder="First Name" title="Input your First name"  required>
+  <div class="form-error"><em>First Name cannot be empty</em></div>
+  <input id="lastName" name="lastName" type="text" placeholder="Last Name" title="Input your Last name" required>
+  <div class="form-error"><em>Last Name cannot be empty</em></div>
+  <input id="email" name="email" type="email" placeholder="Email Address" title="Input your email" required>
+  <div class="form-error"><em>Invalid email address</em></div>
+  <input id="password" name="password" type="password" placeholder="Password" title="Input password" required>
+  <div class="form-error"><em>Invalid password</em></div>
+  <input id="formSubmit" class="btn-submit" name="submit" type="submit" value="Claim your free trial">
+  <p>
+  By clicking the button, you are agreeing to our <a>Terms Of Service</a>
+  </p>
+</form>
+</div> 
+</div>
+<script src="index.js"></script>
+</body>
+</html>
